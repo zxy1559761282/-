@@ -1,0 +1,93 @@
+/* pages/home/home.wxss */
+.head-search
+{
+   
+}
+
+.icon-recycle-board
+{
+    border: 1px solid hsl(194, 79%, 91%);
+    border-radius: 15rpx;
+    background: hsl(194, 79%, 91%);
+    text-align: center;
+}
+
+.icon-recycle-area
+{
+    border: 1px solid rgb(58, 48, 194) ;
+    border-radius: 15rpx;
+    background: rgb(58, 48, 194);
+    width: 30%;
+    margin: 40rpx  auto;
+    padding-bottom: 15rpx;
+}
+
+.icon-recycle-text
+{
+    color: white;
+    margin: 0 auto;
+    font-size: 0.75em;
+}
+
+.recycle-intro
+{
+    font-size: 0.85em;
+    text-align: left;
+    margin-right: 15rpx;
+    margin-left: 40rpx;
+    line-height: 2em;
+    margin-bottom: 30rpx;
+}
+
+.icon-danger-board
+{
+    border: 1px solid hsl(349, 73%, 93%);
+    border-radius: 15rpx;
+    background: hsl(349, 73%, 93%);
+    text-align: center;
+}
+
+.icon-danger-area
+{
+    border: 1px solid rgb(247, 29, 58) ;
+    border-radius: 15rpx;
+    background: rgb(247, 29, 58);
+    width: 30%;
+    margin: 40rpx  auto;
+    padding-bottom: 15rpx;
+}
+
+.icon-kitchen-board
+{
+    border: 1px solid hsl(162, 72%, 93%);
+    border-radius: 15rpx;
+    background: hsl(162, 72%, 93%);
+    text-align: center;
+}
+
+.icon-kitchen-area
+{
+    border: 1px solid rgb(36, 241, 139) ;
+    border-radius: 15rpx;
+    background: rgb(36, 241, 139) ;
+    width: 30%;
+    margin: 40rpx  auto;
+    padding-bottom: 15rpx;
+}
+.icon-other-board
+{
+    border: 1px solid hsl(68, 86%, 86%);
+    border-radius: 15rpx;
+    background: hsl(68, 86%, 86%);
+    text-align: center;
+}
+
+.icon-other-area
+{
+    border: 1px solid rgb(166, 217, 55) ;
+    border-radius: 15rpx;
+    background: rgb(166, 217, 55) ;
+    width: 30%;
+    margin: 40rpx  auto;
+    padding-bottom: 15rpx;
+}

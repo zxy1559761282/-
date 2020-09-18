@@ -1,0 +1,145 @@
+/* pages/test/test.wxss */
+.ques
+{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+.ques-label
+{
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+
+.answer-btn
+{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.recycle-btn
+{
+  border: solid 1px rgb(58, 48, 194);
+  background: white;
+  color: rgb(58, 48, 194);
+  border-radius: 30rpx;
+}
+
+.danger-btn
+{
+  border: solid 1px rgb(247, 29, 58);
+  background: white;
+  color: rgb(247, 29, 58);
+  border-radius: 30rpx;
+}
+
+.kitchen-btn
+{
+  border: solid 1px rgb(36, 241, 139);
+  background: white;
+  color: rgb(36, 241, 139);
+  border-radius: 30rpx;
+}
+
+.other-btn
+{
+  border: solid 1px rgb(166, 217, 55);
+  background: white;
+  color: rgb(166, 217, 55);
+  border-radius: 30rpx;
+}
+
+.tap-style
+{
+  background: #f8f7f7;
+}
+
+.answer-panel
+{
+
+}
+
+.answer-title
+{
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.score-label
+{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.score-value
+{
+  color: rgb(248, 119, 34);
+  font-size: 1.8em;
+}
+
+.answer-list
+{
+  margin-top: 30rpx;
+  width: 80%;
+  font-size: 0.75em;
+  border: solid rgb(219, 217, 217) 1px;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 0rpx 40rpx rgb(219, 217, 217);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cell-style
+{
+  text-align: center;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.recycle
+{
+  color: rgb(58, 48, 194);
+}
+
+.danger
+{
+  color: rgb(247, 29, 58);
+}
+
+.kitchen
+{
+  color: rgb(36, 241, 139);
+}
+
+.other
+{
+  color: rgb(166, 217, 55);
+}
+
+.cell-title
+{
+  font-weight: bold;
+}
+
+.no
+{
+  text-decoration: line-through red;
+  color: rgb(154, 155, 152);
+}
+
+.replay-btn
+{
+  margin-top: 40rpx;
+  text-align: center;
+  font-size: 0.8em;
+  color: #238E23;
+}

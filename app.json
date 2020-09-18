@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/person/person",
+    "pages/search/search",
+    "pages/test/test",
+    "pages/news/news",
+    "pages/web/web"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#238E23",
+    "navigationBarTitleText": "趣扔",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于我的定位显示"
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "查询",
+        "iconPath": "images/search-1.png",
+        "selectedIconPath": "images/search-2.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "images/test-1.png",
+        "selectedIconPath": "images/test-2.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "iconPath": "images/news-1.png",
+        "selectedIconPath": "images/news-2.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "images/user-1.png",
+        "selectedIconPath": "images/user-2.png"
+      }
+    ],
+    "borderStyle": "white",
+    "selectedColor": "#90EE90"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

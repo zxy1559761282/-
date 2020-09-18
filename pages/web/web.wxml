@@ -1,0 +1,6 @@
+<!--pages/web/web.wxml-->
+<van-cell title="{{title}}"  label=" {{source}} {{reportTime}}"></van-cell>
+<view class="panel"><image src="https://yingjiang.info/img/{{imageName}}" class="img" mode="aspectFit"></image></view>
+<view class="content">
+{{content}}
+</view>

@@ -1,0 +1,97 @@
+/* pages/person/person.wxss */
+.photo
+{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
+.user-info
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100rpx;
+}
+
+.name {
+  margin-top: 20rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+  text-align: center;
+}
+
+.page__hd{
+    padding: 30rpx 30rpx 30rpx 50rpx;
+    text-align: center;
+}
+.page__title{
+    display: inline-block;
+    padding: 20rpx 40rpx;
+    font-size: 0.8em;
+    color: #AAAAAA;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.section
+{
+  margin-bottom: 30rpx
+}
+
+.picker-value
+{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background: #ffffff;
+}
+
+.page
+{
+  height: 100%;
+  width: 100%;
+  background: #fbf9fe;
+  position: absolute
+}
+
+.button
+{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: rgb(54, 204, 99);
+  border-radius: 20rpx;
+  color: white;
+  margin-top: 40rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx
+}
+
+.chat
+{
+  font-size: 0.9em;
+  border-radius: 20rpx;
+  border: solid 1px green;
+  box-shadow: 0rpx 0rpx 10rpx green;
+  display: inline-block;
+  color: green;
+  position: fixed;
+  right: 30rpx;
+  bottom: 50rpx;
+  padding: 10rpx;
+}
+
+.modal
+{
+  background: #fbf9fe;
+}
+
+.mes
+{
+  background: white;
+  padding: 20rpx;
+  width: 80%
+}

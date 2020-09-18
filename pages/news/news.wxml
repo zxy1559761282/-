@@ -1,0 +1,10 @@
+<!--pages/news/news.wxml-->
+<view wx:for="{{news}}" class="news-panel">
+  <van-cell  title="{{item.title}}" 
+  url="/pages/web/web?url={{item.newsId}}"
+  link-type="navigateTo"
+  border=""
+  custom-class="news-title">
+  </van-cell>
+  <van-cell label="{{item.source}}" value="{{item.reportTime}}" custom-class="news-label"></van-cell>
+</view>

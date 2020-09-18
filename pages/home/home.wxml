@@ -1,0 +1,145 @@
+<!--pages/home/home.wxml-->
+<view class="head-search" bindtap="onFocus">
+    <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    shape="round"
+    use-action-slot
+    disabled
+    >
+    <view slot="action">搜索</view>
+    </van-search>
+</view>
+<van-row>
+    <van-col span="6">
+        <view>
+            <van-sidebar active-key="{{ activeKey }}" bind:change="onActiveChange">
+                <van-sidebar-item title="可回收物" />
+                <van-sidebar-item title="有害垃圾" />
+                <van-sidebar-item title="厨余垃圾" />
+                <van-sidebar-item title="其他垃圾" />
+            </van-sidebar>
+        </view>
+    </van-col>
+    <van-col span="18">
+        <view hidden="{{activeKey!=0}}">
+           <van-row>
+                <van-col span="22" offset="1">
+                    <view class="icon-recycle-board">
+                        <view class="icon-recycle-area">
+                            <van-icon name="../../images/recycle2.png" size="4em">
+                            </van-icon>
+                            <view class="icon-recycle-text">可回收物</view>
+                        </view>
+
+                        <view class="recycle-intro">
+                            <span style="font-weight:bold">可回收物</span>指适宜回收和可循环再利用的废物，包括纸类，玻璃，金属，塑料，织物等。    
+                        </view>
+
+                        <view class="recycle-intro">
+                            <view><van-icon name="warn-o"></van-icon>投放时保持清洁干燥，避免污染</view>
+                            <view><van-icon name="warn-o"></van-icon>废纸应保持平整</view>
+                            <view><van-icon name="warn-o"></van-icon>立体包装物应清空内容物，清洁后压扁投放</view>
+                            <view><van-icon name="warn-o"></van-icon>玻璃制品轻投轻放，有尖锐边角应包裹后投放</view>
+                        </view>
+                    </view>
+
+                    <view>
+                        <van-cell wx:for="{{recycle}}" title="{{item}}" />
+                    </view>
+                </van-col>
+           </van-row>
+        </view>
+
+        <view hidden="{{activeKey!=1}}">
+           <van-row>
+                <van-col span="22" offset="1">
+                    <view class="icon-danger-board">
+                        <view class="icon-danger-area">
+                            <van-icon name="../../images/danger.png" size="4em">
+                            </van-icon>
+                            <view class="icon-recycle-text">有害垃圾</view>
+                        </view>
+
+                        <view class="recycle-intro">
+                            <span style="font-weight:bold">有害垃圾</span>指对人体健康或自然环境造成直接或潜在危害的物质，包括废电池，废灯管，废杀虫剂，废日化学用品，废旧电器等    
+                        </view>
+
+                        <view class="recycle-intro">
+                            <view><van-icon name="warn-o"></van-icon>投放时注意轻放</view>
+                            <view><van-icon name="warn-o"></van-icon>废灯管等易破损垃圾应连带包装投放</view>
+                            <view><van-icon name="warn-o"></van-icon>废弃药品宜连带包装投放</view>
+                            <view><van-icon name="warn-o"></van-icon>杀虫剂等容器应排空内容物投放</view>
+                        </view>
+                    </view>
+
+                    <view>
+                        <van-cell wx:for="{{danger}}" title="{{item}}" />
+                    </view>
+                </van-col>
+           </van-row>
+        </view>
+
+
+        
+        <view hidden="{{activeKey!=2}}">
+           <van-row>
+                <van-col span="22" offset="1">
+                    <view class="icon-kitchen-board">
+                        <view class="icon-kitchen-area">
+                            <van-icon name="../../images/kitchen.png" size="4em">
+                            </van-icon>
+                            <view class="icon-recycle-text">厨余垃圾</view>
+                        </view>
+
+                        <view class="recycle-intro">
+                            <span style="font-weight:bold">厨余垃圾</span>指居民日常生活中产生的有机易腐垃圾，包括剩饭剩菜，菜叶，果皮，骨头等。
+                        </view>
+
+                        <view class="recycle-intro">
+                            <view><van-icon name="warn-o"></van-icon>投放时沥干水分，扎紧口袋</view>
+                            <view><van-icon name="warn-o"></van-icon>去除食材食品包装物，不得混入塑料袋，纸巾，餐具，厨房用具等</view>
+                            <view><van-icon name="warn-o"></van-icon>垃圾桶应盖好盖子，以免影响环境</view>
+                        </view>
+                    </view>
+
+                    <view>
+                        <van-cell wx:for="{{kitchen}}" title="{{item}}" />
+                    </view>
+                </van-col>
+           </van-row>
+        </view>
+
+        <view hidden="{{activeKey!=3}}">
+           <van-row>
+                <van-col span="22" offset="1">
+                    <view class="icon-other-board">
+                        <view class="icon-other-area">
+                            <van-icon name="../../images/other.png" size="4em">
+                            </van-icon>
+                            <view class="icon-recycle-text">其他垃圾</view>
+                        </view>
+
+                        <view class="recycle-intro">
+                            <span style="font-weight:bold">其他垃圾</span>指除可回收物，有害垃圾，厨余垃圾之外的，混杂，污染，难分类的其他生活垃圾
+                        </view>
+
+                        <view class="recycle-intro">
+                            <view><van-icon name="warn-o"></van-icon>用过的餐巾纸，尿片，沾有污迹，无回收利用价值，宜作为其他垃圾处理</view>
+                            <view><van-icon name="warn-o"></van-icon>难以辨识类别的生活垃圾投入其他垃圾容器</view>
+                        </view>
+                    </view>
+
+                    <view>
+                        <van-cell wx:for="{{other}}" title="{{item}}" />
+                    </view>
+                </van-col>
+           </van-row>
+        </view>
+    </van-col>
+</van-row>
+   
+   
+
+            
+     

@@ -1,0 +1,58 @@
+<!--pages/test/test.wxml-->
+<van-transition show="{{displayQues}}">
+<van-cell title="第{{testIndex+1}}题" value="共10题"  border=""></van-cell>
+<van-transition show="{{show}}" name="fade">
+  <view class="ques">
+    {{testContent[testIndex]}}
+  </view>
+  <view class="ques-label">
+    属于以下哪种分类
+  </view>
+</van-transition>
+<view>
+  <button class="answer-btn recycle-btn" data-text="可回收物" bindtap="onChoose" hover-class="tap-style">
+    <van-icon name="../../images/recycle-btn.png" custom-class="icon-position"></van-icon>
+    可回收物
+  </button>
+  <button class="answer-btn danger-btn" data-text="有害垃圾" bindtap="onChoose" hover-class="tap-style">
+    <van-icon name="../../images/danger-btn.png" custom-class="icon-position"></van-icon>
+    有害垃圾
+  </button>
+  <button class="answer-btn kitchen-btn" data-text="厨余垃圾" bindtap="onChoose" hover-class="tap-style">
+    <van-icon name="../../images/kitchen-btn.png" custom-class="icon-position"></van-icon>
+    厨余垃圾
+  </button>
+  <button class="answer-btn other-btn" data-text="其他垃圾" bindtap="onChoose" hover-class="tap-style">
+    <van-icon name="../../images/other-btn.png"></van-icon>
+    其他垃圾
+  </button>
+</view>
+</van-transition>
+
+<van-transition custom-class="answer-panel" show="{{displayResult}}">
+  <view class="answer-title">答题完毕</view>
+  <view class="score-label">获得
+    <text class="score-value" decode="true">&nbsp;{{score}}&nbsp;</text>分
+  </view>
+  <view class="answer-list">
+    <van-row custom-class="cell-style cell-title">
+      <van-col span="12">题目</van-col>
+      <van-col span="6">我的答案</van-col>
+      <van-col span="6">正确答案</van-col>
+    </van-row>
+    <van-row wx:for="{{testContent}}" custom-class="cell-style">
+      <van-col span="12" custom-class="{{answerKind[index]}}">{{item}}</van-col>
+      <van-col span="6" custom-class="{{isCorrect[index]}}">{{userAnswer[index]}}</van-col>
+      <van-col span="6" custom-class="{{answerKind[index]}}">{{testAnswer[index]}}</van-col>
+    </van-row>
+  </view>
+
+  
+  <view class="replay-btn" bindtap="onReplay">
+    <van-icon name="replay" size="2.3em" color="#238E23"/>
+    <view >再来一次</view>
+  </view>
+
+</van-transition>
+
+

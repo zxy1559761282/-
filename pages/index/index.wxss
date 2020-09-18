@@ -1,0 +1,26 @@
+.inex-container{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.inex-container .logo{
+  width: 300rpx;
+  height: 250rpx;
+  margin-top: 150rpx;
+}
+.inex-container .username{
+  margin-top: 80rpx;
+  font-size: 40rpx;
+  font-weight: 500;
+  color: #32CD32;
+}
+.inex-container .btn{
+  border: 1px solid #FF8C00;
+  margin-top: 180rpx;
+  padding:5px 8px;
+  border-radius: 5px;
+
+}
+.inex-container .btn text{
+  color:#FFA07A;
+}

@@ -1,0 +1,39 @@
+<!--pages/search/search.wxml-->
+<view>
+<van-search
+  value="{{ keyWord }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  shape="round"
+  custom-class="search"
+  focus="true"
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<view hidden="{{hidden}}">
+
+  <van-cell wx:for="{{resArray}}" title="{{item.name}}  [{{wastesKind[item.type]}}]" label="{{item.ps}}"
+  title-class="{{wasteDecorations[item.type]}}">
+  </van-cell>
+
+
+
+
+</view>
+
+<view hidden="{{!hidden}}" class="panel-head">
+  <van-panel title="快速搜索">
+      <view class="panel-body">
+        <view class="keyWord-btn" data-text="头发" bindtap="onChoose">头发</view>
+        <view class="keyWord-btn" data-text="卫生纸" bindtap="onChoose">卫生纸</view>
+        <view class="keyWord-btn" data-text="烟蒂" bindtap="onChoose">烟蒂</view>
+        <view class="keyWord-btn" data-text="袜子" bindtap="onChoose">袜子</view>
+        <view class="keyWord-btn" data-text="小龙虾" bindtap="onChoose">小龙虾</view>
+        <view class="keyWord-btn" data-text="篮球" bindtap="onChoose">篮球</view>
+        <view class="keyWord-btn" data-text="酒瓶" bindtap="onChoose">酒瓶</view>
+      </view>
+  </van-panel>
+</view>
+</view>

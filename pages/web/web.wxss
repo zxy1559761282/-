@@ -1,0 +1,19 @@
+/* pages/web/web.wxss */
+.img
+{
+  width: 90%
+}
+
+.panel
+{
+  text-align: center;
+}
+
+.content
+{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+  margin-top: 50rpx;
+}

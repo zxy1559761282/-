@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="inex-container">
+<image class="logo" src="../../images/logo.jpg"></image>
+<text class="username">和我们一起为垃圾做分类</text>
+<view class="btn" bindtap="goHomeTap">
+  <text>开始文明分类</text>
+</view>
+</view>
